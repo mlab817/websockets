@@ -1,10 +1,25 @@
 {
-    "autoload": {
-        "psr-4": {
-            "MyApp\\": "app"
-        }
-    },
-    "require": {
-        "cboden/ratchet": "^0.4"
+  "name": "mlab817/websockets",
+  "type": "project",
+  "description": "A simple websockets server implementation using Ratchet",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0.2",
+    "cboden/ratchet": "^0.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyApp\\": "app"
     }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
